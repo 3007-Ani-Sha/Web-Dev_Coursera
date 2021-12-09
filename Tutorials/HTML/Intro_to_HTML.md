@@ -9,3 +9,8 @@ HTML : Structure, just tells you the components not anything about font size, st
 CSS : It's role is color, style, font or any other style thing.
 Javascript : Provides the behaviour or the functionality of the site when the html page is loaded, or like what happens when you click on one of the headings.
 
+Check the two html pages in Intro_to_html, one has syle other not but both have same html or basic structure only difference is in styles.
+
+Summary:
+HTML Annonates content and Defines document structure.
+Rest is done via CSS and Javascript.

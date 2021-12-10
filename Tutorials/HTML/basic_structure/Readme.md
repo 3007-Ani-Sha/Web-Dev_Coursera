@@ -37,6 +37,8 @@ Then we move out of head tag and come to body tag <body> </body>,
 it includes the main content visible on the site to the user, often 
 referred to as viewport.
 
+Note: HTML also has comments like other languages it starts with <-- and ends with --> and comment must be between these two.
+
 Check by putting the codein vlidator that if the code is valid.
 
 Always remember while using nested loop that before closing a parent 

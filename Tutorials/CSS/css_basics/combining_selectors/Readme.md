@@ -84,6 +84,33 @@ Combining selector:
 2.Child (direct) selector (selector > selector)
 3.Descendent selector(selector selector)
 
+NOTE : 
+We can use the child selector '>' multiple times to like select upper p tag not lower in example below:
+we could use 
+div > div > p{
+
+}
+or just use
+the combination as below 
+which takes the div which has class makeMeBlue and to it's descendent will be  rule will be applied.
+
+div.makeMeBlue p{
+
+}
+the example is:
+...
+<div>
+  <div>
+    <div class="makeMeBlue">
+      <p>I am feeling blue</p>
+    </div>
+  </div>
+  <section class="makeMeBlue">
+    <p>I just want to be left alone!</p>
+  </section>
+</div>
+...
+
 We didn't cover:
 1.Adjacent sibling selector(selector + selector)
 2.General sibling selector(selector ~ selector)

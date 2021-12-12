@@ -21,6 +21,8 @@ And as you could see, the links that have set up here all have a very specific f
 
 Notice that the section name does not contain the # sign. Only the link to that section contains the # sign. That's one way to identify a section within the page. Another way is, if we scroll down all the way to the bottom of the page, is to create an anchor tag with a name attribute and name the section very similarly to the way you name a section id. The way you refer to these sections is exactly the same, you put a # in front of the name of the section and stick that value in the href attribute of an anchor tag.
 
+NOTE: a functions both inline and block-level element only as far as inclusion of elements is concerned but default displayed as an inline element.
+
 If we scroll all the way down, we even have a back to the top link which basically points to all the way to the top. Now, the top is right here, and if you look at the code and scroll all the way up, we have an h1 tag that has an id with top which allows us to scroll all the way to the bottom of the page, see that link, and jump right back to the top.
 
 What's really neat about fragment identifiers is if you click on one and you have them in URL, you could copy and paste this URL and send it to a friend as a bookmark. And when they paste it into their browser, they will be taken to this page and jump straight to the section that was pointed to by the fragment identifier.

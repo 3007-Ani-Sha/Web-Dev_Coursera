@@ -41,4 +41,34 @@ The truth be told, we could've specified that media query for that size of the d
 Okay, so our three, three, three and three layout gives us four items across and it's just spilling over to the next line and gives us another four items across again. We're going to open Chrome Developer Tools. So as we squeeze browser we'll see the pixel size of the view port. 
 And as we start squeezing the browser we see it jumps to two. As it gets closer and closer to 1200, once it gets past 1200 pixels, it becomes now 6 and 6 column layout, which means that now we're taking up half the space of the entire width of the browser. 
 And if we squeeze past 950 let's take a look and squeeze it past 950 pixels, right here, boom. The items are now stacking one on top of the other, and obviously as a pull it back apart, or pull it wider, it becomes back to our three, three, and three layout, three, three, three and three lay out, four times, and now we have a four column layout across. 
-So that's pretty cool, so it seems we're done, and we could now serve this website to regular mobile phones. So let's take a look at what this site looks like on any phone.
+So that's pretty cool, so it seems we're done, and we could now serve this website to regular mobile phones. So let's take a look at what this site looks like on any phone say, iphone 8.
+
+Okay, so here we are on our phone and we're serving up the website using the link of our github page. 
+We have our website but something's really strange. We thought if we go on the mobile site that's a pretty small device, we wouldn't have two columns, we would have one column because it's such a small device. 
+It seem to have worked in our browser, why isn't it working on the phone? Let's go back to the browser and investigate this a little bit. 
+
+So let's go ahead and investigate this and we're going to use Chrome Developer Tools to do that. And if we look at Chrome Developer Tools here, we'll see a little mobile phone looking like icon and if we click that It'll give us basically the layout that we've seen before when we investigated media queries. 
+And right now, it's set to laptop device, so we're going to go and switch that to iphone 8. 
+It's showing us exactly the same thing as the real Phone was showing us before. 
+Let's take a look at one of these elements that was supposed to take up the entire screen and for some reason is only taking up half. 
+Let's go ahead and take a look at its box model sizing. So let's take a look here, this div right here is saying that it's 480 pixels wide and that's really impossible because the screen itself is only 375 pixels wide. 
+So what's going on here? Well, Chrome Developer Tools is actually giving us a hint as to what's going on here. Take a look at the right side of the screen, its showing you the zooming level of the font simulator. 
+What its telling you is that its only 40% of its 100% zoom. It basically just means the fonts zoomed out and this is really a default feature on all the phones. 
+They try to zoom out on websites that don't tell them to do anything different. So, they could try to fit the entire content into the viewport of the phone. So, how do we tell the phone's browser that, no, this is actually a responsive website and you don't need to try to zoom out, just stay at the regular zoom level. 
+
+Well the way that we do that is by specifying a special meta tag. Let's go ahead and switch to our code editor again, and we'll go all the way to the top and we'll place one more meta tag just below original one. And the name of this meta tag, is called viewport. 
+And what we need to tell it is, that the content of our viewport, is first of all, consider its width to be device width, don't try to zoom out and also, its initial scale to be one and we'll close the meta tag. 
+
+So, now with this meta tag in place, the browser will consider the device width as the width of the viewport and its initial scale factor will be one, meaning it won't scale anything up or down. 
+Now let's go ahead and switch back to the browser and we see that now it switched to being one column. Let's go ahead and try it out on a real phone and see if it worked. 
+Okay, so we could see that it worked, it now is only one column, and we could scroll it, scroll up and down.
+And it is indeed one column layout now.
+
+# Summary:
+So in summary we went over the idea and need of responsive design. 
+
+And we talked about the 12-column grid layout, which is the most common and most convenient grid layout there is out there right now. 
+And we spoke about the fact that in order to achieve fluid width we actually use percentages to specify the width of each column and different items within the columns as well. 
+
+We also spoke about the fact that we needed to tell the devices out there that they should not try to zoom out and try to fit all the contents they can. 
+Instead they should behave as they are, mobile devices with more narrow screens and smaller screens, and the way we would tell those devices all of this information is by using this meta tag, the viewport meta tag.

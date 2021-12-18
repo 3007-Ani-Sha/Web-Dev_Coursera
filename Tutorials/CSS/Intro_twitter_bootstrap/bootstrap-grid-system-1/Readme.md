@@ -1,0 +1,2 @@
+Bootstrap Grid system:
+Probably one of the most central components of Bootstrap that allows developers to easily create responsive layouts is the grid system. So let's go ahead and take a look how it works.

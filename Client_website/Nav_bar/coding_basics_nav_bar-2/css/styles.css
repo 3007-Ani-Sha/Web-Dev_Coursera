@@ -10,8 +10,33 @@ body {
     border: 0;
 }
 #logo-img {
-    background: url('../images/1.png') no-repeat;
-    width: 97px;
-    height: 54px;
+    background: url('../images/Circle\ Stripes\ Logo\ _\ BrandCrowd\ Logo\ Maker\ _\ BrandCrowd\ -\ Google\ Chrome\ 20-12-2021\ 23_12_18-1.png') no-repeat;
+    width: 150px;
+    height: 120px;
     margin: 10px 15px 10px 0px;
+}
+.navbar-brand {
+    padding-top: 25px;
+}
+.navbar-brand h1 {
+    color: green;
+    text-transform: uppercase;
+    font-size: 30px;
+    text-shadow: 1px 1px 1px #222;
+    font-weight: bold;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    line-height: .75;
+}
+.navbar-brand > a {
+    text-decoration: none;
+}
+.navbar-brand p { /*Kosher cert*/
+    color: #000;
+    text-transform: uppercase;
+    font-size: .7em;
+    margin-top: 15px;
+}
+.navbar-brand p span {/*Kosher logo*/
+    vertical-align: middle;
 }

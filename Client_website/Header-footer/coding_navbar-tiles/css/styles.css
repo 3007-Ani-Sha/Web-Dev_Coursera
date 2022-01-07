@@ -4,6 +4,7 @@ body {
     background-color: #61122f;
     font-family: 'Oxygen', sans-serif;
 }
+/*Header start*/
 #header-nav {
     background-color: #f6b319;
     border-radius: 0;
@@ -82,13 +83,16 @@ i {
     background-color: #fff;
     border-radius: 5px;
 }
+/*Header Ends*/
+/*Main-Content Starts*/
 #main-content {
     padding: 0px;
 }
 .container .jumbotron {
-    margin-top: 50px;
-    box-shadow: 0 0 50px #3F0C1F;
+    margin-top: 15px;
+    box-shadow: 0 0 15px #3F0C1F;
     border: 2px solid #3F0C1F;
+    margin-bottom: 15px;
 }
 @media (min-width: 1200px) {
     .container .jumbotron {
@@ -114,3 +118,16 @@ i {
         height: 200px;
     }
 }
+#menu-tile, #special-tile, #map-tile {
+    height: 250px;
+    width: 100%;
+    margin-bottom: 15px;
+    position: relative;
+    border: 2px solid #3F0C1F;
+    border-radius: 5px;
+    color: #fff;
+    overflow: hidden;
+}
+#menu-tile:hover, #special-tile:hover, #map-tile:hover {
+    box-shadow: 0px 1px 5px 1px #cccccc;
+} 

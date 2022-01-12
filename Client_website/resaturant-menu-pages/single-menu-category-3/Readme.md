@@ -1,4 +1,4 @@
-In part one and part two of this lecture, we were able to create the HTML and the CSS styling to lay out our single category menu items page. In this lecture, we're going to address the variability of the data that we display, through using the grid that we created, in the previous parts. Now before we declare a victory over this page here, let's go ahead and add, a whole bunch of these items inside the page. So, here's one, all the way down here. And let's copy that. And let's just make a space. That's going to be number 3. That's going to be number 4, number 5, and number 6. I think that's pretty much enough.
+Now, we're going to address the variability of the data that we display, through using the grid that we created, in the previous parts. Now before we declare a victory over this page here, let's go ahead and add, a whole bunch of these items inside the page. So, here's one, all the way down here. And let's copy that. And let's just make a space. That's going to be number 3. That's going to be number 4, number 5, and number 6.
 
 Okay, so let's number them properly here.
 

@@ -56,5 +56,6 @@ Or in other words:
 Reference(not defined) variable will be searched for in it's current scope first. If not found, the outer reference will be searched. If not found then the outer's outer reference will be searched, etc.
 This will keep going until the Global scope. If not found in the GLobal scope, the variable is undefined.
 
-So say there are two functions in global like in example.js so the output will be x = 2, on calling second function.
+So say there are two functions in global like in example.js, so the output will be x = 2, on calling second function.
 
+Or even in the console via script.js file, we can see the scope property mentioned above.

@@ -19,7 +19,7 @@ Booleans can have oinly two values: true or false.
 ### Undefined :
 Undefined signifies that no value has ever been set.
 It can have only one value that is: undefined.
-We can set a variable to undefined but should NEVER do it. It's meaning is that it is never been defined, so defining it to undefined iscounter to its core meaning leading to confusion in the code.
+We can set a variable to undefined but should NEVER do it. It's meaning is that it is never been defined, so defining it to undefined is counter to its core meaning leading to confusion in the code.
 ### Null:
 Null signifies lack of value.
 As opposed to undefined, which is lack of definition.
